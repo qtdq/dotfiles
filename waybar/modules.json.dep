@@ -1,0 +1,40 @@
+{
+    "custom/artix": {
+        "format": "",
+        "tooltip": true,
+        "tooltip-format": "Artix btw"
+    },
+
+    "clock": {
+        "format": "{:%H:%M | %e %B} ",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format-alt": "{:%Y-%m-%d}"
+    },
+
+"wireplumber": {
+    "format": "{volume}% {icon}",
+    "format-muted": "",
+    "on-click": "helvum",
+        "format-icons": ["", "", ""]
+    },
+    "memory": {
+        "format": "  {}%",
+	"tooltip": true
+    },
+    "hyprland/language": {
+       "format": "  {}",
+       "format-en": "EN",
+       "format-ru": "RU"
+    },
+    "hyprland/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": true,
+        "warp-on-scroll": false,
+        "format": "{name}",
+        "format-icons": {
+            "urgent": "",
+            "active": "",
+            "default": ""
+        }
+    }
+}

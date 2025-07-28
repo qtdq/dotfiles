@@ -1,0 +1,9 @@
+{
+    "editor.fontFamily": "'Source code pro'",
+    "C_Cpp_Runner.cppCompilerPath": "clang++",
+    "C_Cpp_Runner.cppStandard": "c++23",
+    "C_Cpp_Runner.debuggerPath": "lldb",
+    "C_Cpp_Runner.cCompilerPath": "clang",
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false
+}
