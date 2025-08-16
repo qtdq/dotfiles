@@ -6,7 +6,7 @@ config.default_prog = {"/usr/bin/bash", "--noprofile"}
 -- Font
 config.font_size = 12 -- default
 config.line_height = 1 -- default
--- config.font = wezterm.font('ttf-dejavu'
+-- config.font = wezterm.font('Source Code Pro')
 
 -- Appearance
 config.hide_tab_bar_if_only_one_tab = true
@@ -16,11 +16,11 @@ config.window_padding = {left = 4, right = 0, top = 2, bottom = 0}
 config.max_fps = 75
 
 -- Opacity
-config.window_background_opacity = 0.92
+config.window_background_opacity = 0.46
 config.text_background_opacity = 0.9
 
 -- Colours
-config.color_scheme = 'Flatland'
+config.color_scheme = 'Vesper'
 
 -- Dusty blue --
 -- Violet Dark		Very depressed, a bit hard to read
