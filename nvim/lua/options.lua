@@ -16,7 +16,7 @@ vim.opt.showmode = false
 
 -- Searching
 vim.opt.incsearch = true
-vim.opt.hlsearch = true
+vim.opt.hlsearch = false
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
 
