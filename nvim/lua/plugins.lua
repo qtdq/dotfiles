@@ -12,12 +12,12 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
-	{ "mason-org/mason.nvim", opts = {} },
-
 	{
 		"neovim/nvim-lspconfig",
 		config = function()
 			vim.lsp.enable("clangd")
+      vim.lsp.enable("lua_ls")
+      vim.lsp.enable("bashls")
 		end,
 	},
 
@@ -53,7 +53,7 @@ require("lazy").setup({
 				end,
 			},
 
-			{ "windp/nvim-autopairs", opts = {} },
+			{ "windwp/nvim-autopairs", opts = {} },
 		},
 		opts = function()
 			return require("configs.blink")

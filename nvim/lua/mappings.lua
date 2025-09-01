@@ -21,4 +21,4 @@ vim.api.nvim_set_keymap('n', '<leader>fm', '<cmd>lua require("conform").format()
 -- debug
 vim.api.nvim_set_keymap('n', '<leader>db', ':lua require("dap").toggle_breakpoint()<CR>', {}) 
 vim.api.nvim_set_keymap('n', '<leader>dc', ':lua require("dap").continue()<CR>', {})
-
+vim.api.nvim_set_keymap('n', '<leader>di', ':lua require("dap").repl.open()<CR>', {})

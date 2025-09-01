@@ -4,7 +4,7 @@ local config = {}
 config.default_prog = {"/usr/bin/bash", "--noprofile"}
 
 -- Font
-config.font_size = 12 -- default
+config.font_size = 10 -- default
 config.line_height = 1 -- default
 -- config.font = wezterm.font('Source Code Pro')
 
