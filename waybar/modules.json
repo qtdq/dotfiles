@@ -32,6 +32,12 @@
                     }
     },
 
+  "hyprland/language": {
+   "format": "  {}",
+   "format-en": "EN",
+   "format-ru": "RU"
+  },
+
 	"wireplumber": {
 	    "format": "{volume}% {icon}",
 	    "format-muted": "",

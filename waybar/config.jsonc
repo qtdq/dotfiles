@@ -15,7 +15,8 @@
     ],
     "modules-right": [
         "wireplumber",
-        "memory"
+        "memory",
+        "hyprland/language"
         //"hyprland/language"
     ],
     //Modules configuration
