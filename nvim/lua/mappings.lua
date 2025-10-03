@@ -1,26 +1,26 @@
 local map = vim.keymap.set
-local dap = require('dap')
+vim.g.mapleader = " "
 
--- vim commands
-map("n", "<leader>dl", "<:t. <CR>")
-
--- vim modes
+-- mode
 map("i", "jk", "<ESC>")
 map("i", "jj", "<ESC>")
 
--- tree
-map("n", "<C-n>", "<cmd> NvimTreeToggle <CR>")
+-- shortcuts
+map("n", "<leader>w", ":write<CR>")
+map("n", "<leader>q", ":quit<CR>")
+map("n", "<leader>dl", ":t.<CR>")
 
--- lsp commands
-vim.api.nvim_set_keymap('n', '<leader>ca', '<cmd>lua vim.lsp.buf.code_action()<CR>', {})
-vim.api.nvim_set_keymap('n', '<leader>rn', '<cmd>lua vim.lsp.buf.rename()<CR>', {})
-vim.api.nvim_set_keymap('n', '<leader>sd', '<cmd>lua vim.diagnostic.open_float(0, { scope = "line" })<CR>', {})
+-- lsp
+map("n", "<leader>ss", vim.lsp.buf.hover)
+map("n", "<leader>sd", vim.diagnostic.open_float)
 
 -- conform
-vim.api.nvim_set_keymap('n', '<leader>fm', '<cmd>lua require("conform").format()<CR>', {})
+map("n", "<leader>fm", function()
+  require("conform").format()
+end)
 
--- debug
-vim.api.nvim_set_keymap('n', '<leader>db', ':lua require("dap").toggle_breakpoint()<CR>', {}) 
-vim.api.nvim_set_keymap('n', '<leader>dc', ':lua require("dap").continue()<CR>', {})
-vim.api.nvim_set_keymap('n', '<leader>di', ':lua require("dap").repl.open()<CR>', {})
-vim.api.nvim_set_keymap('n', '<leader>dt', ':lua require("dap").close()<CR>', {})
+-- mini.pick
+map("n", "<leader>h", ":Pick help<CR>")
+
+-- tree
+map("n", "<leader>e", ":NvimTreeToggle<CR>")
