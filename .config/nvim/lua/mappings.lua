@@ -12,7 +12,13 @@ map("n", "<leader>dl", ":t.<CR>")
 
 -- lsp
 map("n", "<leader>ss", vim.lsp.buf.hover)
+map("n", "<leader>rn", vim.lsp.buf.rename)
+
+-- diagnostic
 map("n", "<leader>sd", vim.diagnostic.open_float)
+
+-- tree
+map("n", "<leader>e", ":NvimTreeToggle<CR>")
 
 -- conform
 map("n", "<leader>fm", function()
@@ -22,5 +28,3 @@ end)
 -- mini.pick
 map("n", "<leader>h", ":Pick help<CR>")
 
--- tree
-map("n", "<leader>e", ":NvimTreeToggle<CR>")
