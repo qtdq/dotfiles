@@ -9,6 +9,5 @@ echo "Awaiting $DELAY second before running Hyprland"
 sleep "$DELAY"
 dbus-run-session Hyprland
 
-
 # uv
 export PATH="/home/dxth/.local/bin:$PATH"
